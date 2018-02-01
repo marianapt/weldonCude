@@ -25,7 +25,7 @@
   <body>
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <!-- <span class="site-heading-upper text-primary mb-3">Weldon P Cude : <b> Mediator / Arbitrator</b></span> -->
+      <span class="site-heading-upper text-primary mb-3">Weldon P Cude : <b> Mediator / Arbitrator</b></span>
       <span class="site-heading-lower">Industrial Resource Mediators <br>  &amp; Arbitrators, LLC</span>
     </h1>
 
@@ -47,7 +47,7 @@
               <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
             </li>
             <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="products.html">Services</a>
+              <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
             </li>
             <li class="nav-item px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="store.html">Availability</a>
@@ -69,8 +69,51 @@
             <p class="mb-3"> A way for Attorneys and Their Clients to Resolve Disputes
  
             </p>
-            <div class="intro-button mx-auto">
-              <a class="btn btn-primary btn-xl" href="#">Contact Us</a>
+          
+              <div class="container">
+                <div class="container-box rotated">
+                    <button type="button" class="btn btn-primary btn-xl" data-toggle="modal" data-target="#myModal">Contact Us</button>
+                </div>
+                <!-- Modal -->
+                <div id="myModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">
+                                    Contact Us
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" method="post" id="reused_form" >
+                                    <p> Send your message in the form below and we will get back to you as early as possible. </p>
+                                    <div class="form-group">
+                                        <label for="name"> Name:</label>
+                                        <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email"> Email:</label>
+                                        <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="name"> Message:</label>
+                                        <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Post It! &rarr;</button>
+                                </form>
+                                <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+                                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
             </div>
           </div>
         </div>
@@ -95,7 +138,7 @@
 
     <footer class="footer text-faded text-center py-5">
       <div class="container">
-        <p class="m-0 small">Copyright &copy; Weldon P Cude 2018</p>
+        <p class="m-0 small">Copyright &copy; Your Website 2018</p>
       </div>
     </footer>
 
