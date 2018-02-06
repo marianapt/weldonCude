@@ -8444,19 +8444,7 @@ screen and (min-width: 40em) {
     }
 }
 
-.menu {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center
-}
 
-.menu .menu-icon {
-    outline: none;
-    margin-right: .9375rem
-}
 
 @media print,
 screen and (min-width: 40em) {
@@ -8604,44 +8592,8 @@ screen and (min-width: 64em) {
     transition: max-height .2s, border-color 0s
 }
 
-.menu .main-navigation li a.m-anim:hover::before,
-.menu .main-navigation li a.m-anim:hover::after {
-    max-height: 100%;
-    transition-delay: .1s;
-    border-color: #000
-}
 
-.menu-in.mui-enter {
-    transition-duration: 500ms;
-    transition-timing-function: linear;
-    -ms-transform: scale(.1);
-    transform: scale(.1);
-    transition-property: transform, opacity;
-    opacity: 0
-}
 
-.menu-in.mui-enter.mui-enter-active {
-    -ms-transform: scale(1);
-    transform: scale(1);
-    opacity: 1
-}
-
-.menu-out.mui-leave {
-    transition-duration: 500ms;
-    transition-timing-function: linear;
-    transition-duration: .2s;
-    transition-timing-function: ease;
-    -ms-transform: scale(1);
-    transform: scale(1);
-    transition-property: transform, opacity;
-    opacity: 1
-}
-
-.menu-out.mui-leave.mui-leave-active {
-    -ms-transform: scale(.1);
-    transform: scale(.1);
-    opacity: 0
-}
 
 .reveal-in.mui-enter {
     transition-duration: 500ms;
@@ -8882,13 +8834,51 @@ screen and (min-width: 40em) {
     }
 }
 
-.about {
-    padding: 3.125rem 0;
-    background: #eeefef url("../assets/img/about.jpg") no-repeat;
-    background-size: 90%;
-    background-position: left -6.25rem bottom -9.375rem;
-    height: 100%
-}
+.container1 {
+    padding: 2em;
+  
+    font-size: 20px;
+    color:black;
+  }
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-item {
+    display: flex;
+    justify-items: space-between;
+  }
+  
+  .flex-item p,
+  .flex-item img {
+    display: flex;
+    max-width: 70%;
+    width:  70%;
+    height:  70%;
+    margin:0;
+    padding:0;
+    justify-content: center;
+    align-items: top;
+  }
+  
+  .flex-item img {
+    flex-position: flex-end;
+  }
+/*   
+  .flex-item p span {
+    padding: 2.4em;
+  } */
+  
+  .photos .flex-item {
+    background: rgb(253, 250, 250);
+    justify-content: center;
+    flex-wrap: no-wrap;
+  }
+  .photos .flex-item:nth-child() {
+    background: #f00;
+    flex-direction: row-reverse;
+  }
 
 @media print,
 screen and (min-width: 40em) {
