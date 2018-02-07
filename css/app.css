@@ -9027,37 +9027,27 @@ screen and (min-width: 40em) {
     }
 }
 
-.menu-cart {
-    padding: 3.125rem 0
-}
 
-@media screen and (max-width: 63.9375em) {
-    .menu-cart .tabs-content {
-        height: 100% !important
-    }
-    .menu-cart .tabs-content .tabs-panel {
-        height: 100% !important
-    }
-}
 
-@media screen and (min-width: 64em) and (max-width: 74.9375em) and (orientation: landscape) {
-    .menu-cart .tabs-content {
-        height: 100% !important
-    }
-    .menu-cart .tabs-content .tabs-panel {
-        height: 100% !important
-    }
-}
 
-.menu-cart .tabs-content>.tabs-panel.is-active {
-    animation-duration: 1.25s;
-    animation-name: fadeOut
-}
+/* google calendar */
 
-.menu-cart .tabs-content>.tabs-panel.is-active {
-    animation-duration: 1.25s;
-    animation-name: fadeIn
-}
+.googleCalendar{
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-bottom: 50%;
+  }
+  
+  .googleCalendar iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
 
 @media print,
 screen and (min-width: 40em) {
