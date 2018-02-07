@@ -9033,10 +9033,9 @@ screen and (min-width: 40em) {
 /* google calendar */
 
 .googleCalendar{
-    position: relative;
-    height: 0;
+    position:relative;
+    height: 100%;
     width: 100%;
-    padding-bottom: 50%;
   }
   
   .googleCalendar iframe{
