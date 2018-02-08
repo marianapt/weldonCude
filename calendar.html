@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css"
+    />
+    
+    <script src="https://unpkg.com/scrollreveal@4.0.0-beta.6"></script>
+</head>
+
+<body>
+
+
+        <header class="site-header">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="top-menu  scroll-reveal">
+                            <div class="menu">
+                                <div class="title-bar" data-responsive-toggle="main-nav" data-hide-for="medium">
+                                    <button class="menu-icon dark" type="button" data-toggle="main-nav"></button>
+                                    <div class="title-bar-title">IRMA LLC</div>
+                                </div>
+        
+                                <nav style="font-size: 20px;" id="main-nav" data-animate="menu-in menu-out">
+                                    <ul class="main-navigation">
+                                        <li>
+                                            <a class="m-active" href="index.html" data-text="Home">Home</a>
+                                        </li>
+                                      
+                                      
+                                        <li>
+                                            <a class="m-anim" href="calendar.html" data-text="Menu Cart">Calendar</a>
+                                        </li>
+                                      
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    <section class="googleCalendar">
+
+
+        <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=800&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=weldonpcude%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FChicago"
+            style="border:solid 1px #777" width="1000" height="800" frameborder="0" scrolling="no"></iframe>
+
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/what-input/5.0.2/what-input.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <script type="text/javascript">
+        $('.slider').slick({
+            infinite: true,
+            autoplay: true,
+            autoplaySpeed: 3500,
+            arrows: false,
+            fade: true,
+            cssEase: 'linear'
+        });
+    </script>
+
+    <script>
+        $(window).on('load', function () {
+            $("#preloader").fadeOut();
+        });
+    </script>
+
+</body>
+
+</html>
