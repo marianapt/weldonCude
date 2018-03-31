@@ -3981,9 +3981,9 @@ select {
 }
 
 @media screen and (min-width: 0\0) {
-    select {
+    /* select {
         background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIpJREFUeNrEkckNgDAMBBfRkEt0ObRBBdsGXUDgmQfK4XhH2m8czQAAy27R3tsw4Qfe2x8uOO6oYLb6GlOor3GF+swURAOmUJ+RwtEJs9WvTGEYxBXqI1MQAZhCfUQKRzDMVj+TwrAIV6jvSUEkYAr1LSkcyTBb/V+KYfX7xAeusq3sLDtGH3kEGACPWIflNZfhRQAAAABJRU5ErkJggg==")
-    }
+    } */
 }
 
 select:focus {
@@ -9457,7 +9457,7 @@ footer .copy-info {
     }
 }
 
-#preloader {
+/* #preloader {
     position: fixed;
     left: 0;
     top: 0;
@@ -9472,8 +9472,8 @@ footer .copy-info {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center
-}
-
+} */
+/* 
 @keyframes loader {
     0%,
     10%,
@@ -9485,9 +9485,9 @@ footer .copy-info {
         width: 150px;
         height: 150px
     }
-}
+} */
 
-@keyframes loaderBlock {
+/* @keyframes loaderBlock {
     0%,
     30% {
         transform: rotate(0)
@@ -9498,8 +9498,8 @@ footer .copy-info {
     100% {
         transform: rotate(90deg)
     }
-}
-
+} */
+/* 
 @keyframes loaderBlockInverse {
     0%,
     20% {
@@ -9556,4 +9556,4 @@ footer .copy-info {
     bottom: 0;
     right: 0;
     background-color: #fff
-}
+} */
